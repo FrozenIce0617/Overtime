@@ -16,6 +16,9 @@
 #
 default: &default
   adapter: postgresql
+  host: localhost
+  username: postgres
+  password: root
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -23,7 +26,7 @@ default: &default
 
 development:
   <<: *default
-  database: Overtime_development
+  database: overtime
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Overtime_test
+  database: overtime
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: Overtime_production
+  database: overtime
   username: Overtime
   password: <%= ENV['OVERTIME_DATABASE_PASSWORD'] %>
