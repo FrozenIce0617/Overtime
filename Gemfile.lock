@@ -228,10 +228,10 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara (>= 2.15)
+  capybara (~> 3.18)
   chromedriver-helper
   coffee-rails (~> 4.2)
-  database_cleaner
+  database_cleaner (~> 1.7)
   devise (~> 4.6, >= 4.6.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
