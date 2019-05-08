@@ -10,8 +10,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body class="container">
-  <%= yield %>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <%= render 'shared/nav' %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
