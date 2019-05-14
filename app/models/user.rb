@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   has_many :posts
   # Include default devise modules. Others available are:
@@ -8,6 +10,6 @@ class User < ApplicationRecord
   validates_presence_of :first_name, :last_name
 
   def full_name
-    last_name.upcase + ", " + first_name.upcase
+    last_name.upcase + ', ' + first_name.upcase
   end
 end
