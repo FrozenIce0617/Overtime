@@ -69,7 +69,7 @@ end
 gem 'administrate', '~> 0.11.0'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'bourbon', '~> 5.1'
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 gem 'gritter', '~> 1.2'
 gem 'pundit', '~> 2.0', '>= 2.0.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
