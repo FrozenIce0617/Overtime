@@ -66,7 +66,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'administrate', '~> 0.11.0'
+gem 'administrate', '~> 0.13.0'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'bourbon', '~> 5.1'
 gem 'devise', '~> 4.6', '>= 4.6.2'
